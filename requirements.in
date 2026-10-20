@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+psycopg[binary,pool]
+PyJWT
+bcrypt
+pydantic[email]
+fastapi-code-generator>=0.8
+httpx
+pytest
+pyyaml

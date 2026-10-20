@@ -1,0 +1,11 @@
+"""Generated from the OpenAPI spec. DO NOT EDIT."""
+from __future__ import annotations
+
+from fastapi import APIRouter
+
+from .routers import {{ routers | join(", ") }}
+
+api_router = APIRouter()
+{% for router in routers -%}
+api_router.include_router({{router}}.router)
+{% endfor -%}

@@ -1,0 +1,7 @@
+.venv
+.git
+app/generated
+**/__pycache__
+.pytest_cache
+tests
+*.md
